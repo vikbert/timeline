@@ -1,0 +1,87 @@
+.sectionProcess {
+  --gradient-color-1: #007cf0;
+  --gradient-color-2: #00dfd8;
+  --gradient-color-3: #7928ca;
+  --gradient-color-4: #f9cb28;
+}
+
+.sectionProcess .processStepsContainer .processStepContainer .processStepTitleContainer {
+  margin-top: -16px;
+  position: relative;
+}
+
+.sectionProcess
+.processStepsContainer
+.processStepContainer
+.processStepTitleContainer
+.processStepTitle,
+.sectionProcess
+.processStepsContainer
+.processStepContainer
+.processStepTitleContainer
+.processStepTitleOverlay {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 7rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.2em;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
+.sectionProcess
+.processStepsContainer
+.processStepContainer
+.processStepTitleContainer
+.processStepTitleOverlay {
+  position: relative;
+  margin-top: -8.42rem;
+  width: auto;
+  height: 100%;
+  opacity: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.sectionProcess .processStepsContainer .processStepContainer.processStep1 .processStepTitleOverlay {
+  background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+  animation: animated-gradient-title-1 8s infinite;
+}
+
+.sectionProcess .processStepsContainer .processStepContainer.processStep2 .processStepTitleOverlay {
+  background-image: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3));
+  animation: animated-gradient-title-2 8s infinite;
+}
+
+.sectionProcess .processStepsContainer .processStepContainer.processStep3 .processStepTitleOverlay {
+  background-image: linear-gradient(90deg, var(--gradient-color-3), var(--gradient-color-4));
+  animation: animated-gradient-title-3 8s infinite;
+}
+
+@keyframes animated-gradient-title-1 {
+  0%, 16.667%, 100% {
+    opacity: 1;
+  }
+  33.333%, 83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes animated-gradient-title-2 {
+  0%, 16.667%, 66.667%, 100% {
+    opacity: 0;
+  }
+  33.333%, 50% {
+    opacity: 1;
+  }
+}
+
+@keyframes animated-gradient-title-3 {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+  66.667%, 83.333% {
+    opacity: 1;
+  }
+}
