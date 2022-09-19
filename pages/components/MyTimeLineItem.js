@@ -13,7 +13,7 @@ export default function MyTimeLineItem(props) {
 
     return (
         <TimelineItem>
-            <TimelineOppositeContent sx={{m: 'auto 0'}} variant="h2" color="text.primary">
+            <TimelineOppositeContent sx={{m: 'auto 0'}} variant="h3" color="text.primary">
                 {props.date}
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -24,7 +24,7 @@ export default function MyTimeLineItem(props) {
                 <TimelineConnector/>
             </TimelineSeparator>
             <TimelineContent sx={{py: '12px', px: 2}}>
-                <Typography variant="h6" component="span">
+                <Typography variant="h6" component="span" sx={{textTransform: 'capitalize' }}>
                     {props.title}
                 </Typography>
                 <Typography>
