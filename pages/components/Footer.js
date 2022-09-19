@@ -1,17 +1,29 @@
 import styles from '../../styles/Home.module.css';
-import Image from 'next/image';
+import {LinkedIn, GitHub, Twitter, LogoDev} from '@mui/icons-material';
 
 export default function Footer() {
     return (<footer className={styles.footer}>
-            <a
-                href="https://vercel.com"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Powered by{' '}
-                <span className={styles.logo}>
-                    <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
-                </span>
-            </a>
-        </footer>);
+        <ul className={styles.social}>
+            <li>
+                <a href={'https://www.linkedin.com/in/xun-zhou-0648772/'} target='_blank'>
+                    <LinkedIn sx={{fontSize: 40}}/>
+                </a>
+            </li>
+            <li>
+                <a href={'https://twitter.com/segentor'} target='_blank'>
+                    <Twitter sx={{fontSize: 40}}/>
+                </a>
+            </li>
+            <li>
+                <a href={'https://vikbert.github.io/'} target={'_blank'}>
+                    <GitHub sx={{fontSize: 40}}/>
+                </a>
+            </li>
+            <li>
+                <a href={'https://dev.to/vikbert'} target={'_blank'}>
+                    <LogoDev sx={{fontSize: 40}} target={'_blank'}/>
+                </a>
+            </li>
+        </ul>
+    </footer>);
 }
