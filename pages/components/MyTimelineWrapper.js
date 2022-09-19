@@ -9,8 +9,8 @@ const styles = {
         margin: '20px 0', maxWidth: '780px',
     }, p: {
         color: '#9b9999',
-        backgroundColor: 'rgba(255,255,255,0.22)',
-        padding: '4px 8px',
+        backgroundColor: 'rgba(255,255,255,0.47)',
+        padding: '4px 10px',
         borderRadius: '8px',
     },
 };
@@ -19,19 +19,16 @@ export default function MyTimelineWrapper(props) {
     const length = props.items.length;
     return <>
         <GlobalStyles styles={styles}/>
-        <main className={styles.main}>
-            <Timeline position="alternate">
-                {props.items.map(function(item, index) {
-                    return <MyTimeLineItem
-                        key={index}
-                        length={length}
-                        index={index}
-                        date={item.date}
-                        title={item.title}
-                        description={item.description}/>;
-                })}
-            </Timeline>
-        </main>
-
+        <Timeline position="alternate">
+            {props.items.map(function(item, index) {
+                return <MyTimeLineItem
+                    key={index}
+                    length={length}
+                    index={index}
+                    date={item.date}
+                    title={item.title}
+                    description={item.description}/>;
+            })}
+        </Timeline>
     </>;
 }
