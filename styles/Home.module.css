@@ -71,6 +71,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -82,7 +83,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 400px;
 }
 
 .card:hover,
