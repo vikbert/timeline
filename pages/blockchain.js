@@ -1,37 +1,40 @@
 import MyTimelineWrapper from './components/MyTimelineWrapper';
 import HomeButton from './components/HomeButton';
 import Hero from './components/hero/Hero';
+import Head from 'next/head';
 
 const items = [
     {
         date: '1991',
         title: 'The First Blockchain',
-        description: 'Blockchain pioneers Scott Stornetta and Stuart Haber work on the first Blockchain and it is' +
+        description: 'Blockchain pioneers Scott Stornetta and Stuart Haber worked on the first Blockchain and it is' +
             ' described for the first time as a cryptographically secured chain of blocks.',
     }, {
         date: '1998',
         title: 'First Digital Currency',
-        description: 'Computer scientist Nick Szabo works on ‘BitGold’, a decentralised digital currency. Bit gold' +
+        description: 'Computer scientist Nick Szabo worked on ‘BitGold’, a decentralised digital currency. BitGold ' +
             ' was never implemented, but has been called "a direct precursor to the Bitcoin architecture."',
     }, {
         date: '2001',
-        title: 'SHA-2(secure hash algorithm 2) by NSA',
+        title: 'SHA-2 by NSA',
         description: 'SHA-2 (Secure Hash Algorithm 2) is a set of cryptographic hash functions designed by ' +
-            'the United States National Security Agency (NSA) and first published in 2001.',
+            'the United States National Security Agency (NSA) and first published in 2001. SHA2 becomes the ' +
+            'key component to the Proof-of-Work (PoW) that is the form of ' +
+            'adding new blocks of transactions to a cryptocurrency\'s blockchain.'
     }, {
-        date: '2008', title: 'Bitcoin white paper', description: 'Satoshi Nakamoto releases bitcoin white ' +
-            'paper: Bitcoin: A Peer-to-Peer Electronic Cash System, that establishes the model for a blockchain.',
+        date: '2008', title: 'The word: Bitcoin', description: 'On 31 October 2008, Satoshi Nakamoto released his bitcoin white ' +
+            'paper with the title "Bitcoin: A Peer-to-Peer Electronic Cash System, that establishes the model for a blockchain".',
     }, {
-        date: '2008-2009',
+        date: '2009',
         title: 'First Bitcoin Software',
-        description: 'Nakamoto uploaded blockchain source code to SourceForge in 2008, so software developers ' +
+        description: 'Nakamoto uploaded blockchain source code to SourceForge on 09 January 2009, so software developers ' +
             'around the world could contribute to this project. Nakamoto released version 0.1 of ' +
             'the Bitcoin Software, that is the first' + ' blockchain as the public ledger for transactions ' +
             'made using bitcoin.',
     }, {
         date: '22.05.2010', title: 'The first Bitcoin Purchase', description: 'On 22.05.2010, Laszlo Hanyecz ' +
-            'negotiated to pay 10,000 BTC for two Papa John\'s pizzas priced at about $25. The date is now ' +
-            'celebrated in the crypto calendar' +
+            'negotiated to pay 10,000 BTC for two Papa John\'s pizzas priced at about $25. It was the first ' +
+            'bitcoin purchase in real world. The date is now celebrated in the crypto calendar' +
             ' as "Bitcoin Pizza Day."',
     }, {
         date: '2013', title: 'Ethereum & Smart Contract', description: 'Vitalik Buterin released Ethereum ' +
@@ -92,6 +95,10 @@ const items = [
 export default function Blockchain() {
     return <>
         <HomeButton/>
+        <Head>
+            <title>Blockchain History Timeline</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Hero title1={'Blockchain.'} title2={'History.'} title3={'Timeline.'}/>
         <MyTimelineWrapper items={items}/>
     </>;

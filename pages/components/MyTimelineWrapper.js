@@ -6,7 +6,7 @@ const styles = {
     ul: {
         alignItems: 'center',
     }, li: {
-        margin: '20px 0', maxWidth: '780px',
+        margin: '20px 0', maxWidth: '1024px',
     }, p: {
         color: '#9b9999',
         backgroundColor: 'rgba(255,255,255,0.47)',
