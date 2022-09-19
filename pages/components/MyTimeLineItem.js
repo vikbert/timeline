@@ -6,17 +6,20 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import LineItemIcon from '@mui/icons-material/ArrowDownward';
 import Typography from '@mui/material/Typography';
+import {RocketLaunch} from '@mui/icons-material';
 
 export default function MyTimeLineItem(props) {
+    const isFirst =  1 === props.index + 1;
+
     return (
         <TimelineItem>
-            <TimelineOppositeContent sx={{m: 'auto 0'}} variant="h2" color="text.secondary">
+            <TimelineOppositeContent sx={{m: 'auto 0'}} variant="h2" color="text.primary">
                 {props.date}
             </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineConnector/>
                 <TimelineDot color="secondary">
-                    <LineItemIcon/>
+                    {isFirst ? <RocketLaunch/> : <LineItemIcon/>}
                 </TimelineDot>
                 <TimelineConnector/>
             </TimelineSeparator>

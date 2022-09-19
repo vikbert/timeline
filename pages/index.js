@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Footer from './components/Footer';
 import Hero from './components/hero/Hero';
 
 export default function Home() {
-    return (
-        <div className={styles.container}>
+    return (<div className={styles.container}>
             <Head>
                 <title>Timelines</title>
                 <meta name="description" content="timelines to display the history"/>
@@ -34,8 +32,5 @@ export default function Home() {
                     </Link>
                 </div>
             </main>
-
-            <Footer/>
-        </div>
-    );
+        </div>);
 }
