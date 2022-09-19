@@ -1,7 +1,7 @@
 .sectionProcess {
-  --gradient-color-1: #007cf0;
-  --gradient-color-2: #00dfd8;
-  --gradient-color-3: #7928ca;
+  --gradient-color-1: #690269;
+  --gradient-color-2: #421fc2;
+  --gradient-color-3: #9f5be3;
   --gradient-color-4: #f9cb28;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .sectionProcess .processStepsContainer .processStepContainer.processStep2 .processStepTitleOverlay {
-  background-image: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-3));
+  background-image: linear-gradient(90deg, var(--gradient-color-3), var(--gradient-color-2));
   animation: animated-gradient-title-2 8s infinite;
 }
 

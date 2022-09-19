@@ -1,5 +1,6 @@
 import MyTimelineWrapper from './components/MyTimelineWrapper';
 import HomeButton from './components/HomeButton';
+import Hero from './components/hero/Hero';
 
 const items = [
     {
@@ -91,6 +92,7 @@ const items = [
 export default function Blockchain() {
     return <>
         <HomeButton/>
+        <Hero title1={'Blockchain.'} title2={'History.'} title3={'Timeline.'}/>
         <MyTimelineWrapper items={items}/>
     </>;
 }

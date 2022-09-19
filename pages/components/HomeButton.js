@@ -7,7 +7,7 @@ export default function HomeButton() {
     return (
         <Box sx={{ '& > :not(style)': { m: 1 } }}>
             <Link href={'/'}>
-                <Fab color="secondary" aria-label="edit">
+                <Fab color="secondary" aria-label="home">
                     <HomeIcon />
                 </Fab>
             </Link>
