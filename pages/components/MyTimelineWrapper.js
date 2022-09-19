@@ -16,14 +16,12 @@ const styles = {
 };
 
 export default function MyTimelineWrapper(props) {
-    const length = props.items.length;
     return <>
         <GlobalStyles styles={styles}/>
         <Timeline position="alternate">
-            {props.items.map(function(item, index) {
+            {props.items && props.items.map(function(item, index) {
                 return <MyTimeLineItem
                     key={index}
-                    length={length}
                     index={index}
                     date={item.date}
                     title={item.title}
