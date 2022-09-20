@@ -2,6 +2,7 @@ import MyTimelineWrapper from './components/MyTimelineWrapper';
 import HomeButton from './components/HomeButton';
 import Hero from './components/hero/Hero';
 import Head from 'next/head';
+import Footer from './components/Footer';
 
 const items = [
     {
@@ -99,7 +100,11 @@ export default function Blockchain() {
             <title>Blockchain History Timeline</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
+
         <Hero title1={'Blockchain.'} title2={'History.'} title3={'Timeline.'}/>
+
         <MyTimelineWrapper items={items}/>
+
+        <Footer/>
     </>;
 }

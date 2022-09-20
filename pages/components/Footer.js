@@ -6,22 +6,22 @@ export default function Footer() {
         <ul className={styles.social}>
             <li>
                 <a href={'https://www.linkedin.com/in/xun-zhou-0648772/'} target='_blank'>
-                    <LinkedIn sx={{fontSize: 40}}/>
+                    <LinkedIn sx={{fontSize: 24}}/>
                 </a>
             </li>
             <li>
                 <a href={'https://twitter.com/segentor'} target='_blank'>
-                    <Twitter sx={{fontSize: 40}}/>
+                    <Twitter sx={{fontSize: 24}}/>
                 </a>
             </li>
             <li>
                 <a href={'https://vikbert.github.io/'} target={'_blank'}>
-                    <GitHub sx={{fontSize: 40}}/>
+                    <GitHub sx={{fontSize: 24}}/>
                 </a>
             </li>
             <li>
                 <a href={'https://dev.to/vikbert'} target={'_blank'}>
-                    <LogoDev sx={{fontSize: 40}} target={'_blank'}/>
+                    <LogoDev sx={{fontSize: 24}} target={'_blank'}/>
                 </a>
             </li>
         </ul>
