@@ -25,7 +25,7 @@ export default function Home() {
                         <p>The history of blockchain</p>
                     </a>
                 </Link>
-                <Link href="/">
+                <Link href="/web3">
                     <a className={styles.card}>
                         <h2>Web 3 &rarr;</h2>
                         <p>The history of the Web revolution (coming soon)</p>
