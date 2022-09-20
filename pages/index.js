@@ -28,7 +28,7 @@ export default function Home() {
                 <Link href="/web3">
                     <a className={styles.card}>
                         <h2>Web 3 &rarr;</h2>
-                        <p>The history of the Web revolution (coming soon)</p>
+                        <p>The history of the Web</p>
                     </a>
                 </Link>
             </div>

@@ -183,14 +183,16 @@ const items = [
 export default function Web3() {
     return <>
         <HomeButton/>
-        <Head>
-            <title>Web3 History Timeline</title>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+        <main>
+            <Head>
+                <title>Web3 History Timeline</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
 
-        <Hero title1={'Web 1.0'} title2={'Web 2.0'} title3={'Web 3.0'}/>
+            <Hero title1={'Web 1.0'} title2={'Web 2.0'} title3={'Web 3.0'}/>
 
-        <MyTimelineWrapper items={items}/>
+            <MyTimelineWrapper items={items}/>
+        </main>
 
         <Footer/>
     </>;
