@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 const items = [
     {
         date: '🔴 Web 1.0',
-        title: 'Web 1.0 (1989-2005)',
+        title: '1989-2005',
         description: 'While working at CERN(European Organization for Nuclear Research), ' +
             'Sir Tim Berners-Lee developed the World Wide Web in 1989. He got inspired by a problem his colleagues ' +
             'were facing: sharing information from one computer to another was very complicated.' +
