@@ -1,9 +1,11 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 20px;
+  width: 100vw;
 }
 
 .main {
   min-height: 100vh;
+  min-width: 400px;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -13,6 +15,7 @@
 }
 
 .footer {
+  min-width: 400px;
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -84,7 +87,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 400px;
+  min-width: 320px;
 }
 
 .card:hover,

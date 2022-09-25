@@ -86,3 +86,39 @@
     opacity: 1;
   }
 }
+@media (max-width: 425px) {
+  .sectionProcess
+  .processStepsContainer
+  .processStepContainer
+  .processStepTitleContainer
+  .processStepTitle,
+  .sectionProcess
+  .processStepsContainer
+  .processStepContainer
+  .processStepTitleContainer
+  .processStepTitleOverlay {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.2em;
+    letter-spacing: -4px;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .sectionProcess
+  .processStepsContainer
+  .processStepContainer
+  .processStepTitleContainer
+  .processStepTitleOverlay {
+    position: relative;
+    margin-top: -6.12rem;
+    width: auto;
+    height: 100%;
+    opacity: 1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+  }
+}
