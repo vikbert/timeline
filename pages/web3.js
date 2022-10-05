@@ -129,8 +129,10 @@ const items = [
             ' elephants, is uploaded by co-founder Jawed Karim on April 23. Google acquires the company a year later.',
     },{
         date: '10.2005',
-        title: 'first web 2.0 conference',
-        description: '',
+        title: 'Web 2.0 summit',
+        description: 'The Web 2.0 Summit (originally known as the Web 2.0 Conference) was an annual event, ' +
+            'held in San Francisco, California from 2004 to 2011, that featured discussions about the World Wide Web.' +
+            'The event was started by Tim O\'Reilly, who is also widely credited with popularizing the term "Web 2.0".',
     },{
         date: '21.03.2006',
         title: 'Twitter launched',
