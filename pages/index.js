@@ -31,6 +31,12 @@ export default function Home() {
                         <p>The history of the Web</p>
                     </a>
                 </Link>
+                <Link href="/php">
+                    <a className={styles.card}>
+                        <h2>PHP &rarr;</h2>
+                        <p>27 Years of PHP (1995-2022)</p>
+                    </a>
+                </Link>
             </div>
         </main>
         <Footer/>
